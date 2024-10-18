@@ -26,7 +26,23 @@
                     class="main-form"
                     method="POST">
 
-            <div id="errorField" class="error_field"></div>
+                    <div id="errorField" class="error_field">
+                        <?php 
+                        if(isset($_GET['error'])) {
+                            $error = $_GET['error'];
+                            
+                        switch ($error) {
+                            case '1':
+                                echo '<p>An unexpected error occured</p>';
+                            break;
+                            
+                            case '2':
+                                echo '<p>That email is not authorized to register as an admin user</p>';
+                            }
+                        }
+                        ?>
+                    </div>
+
                     <div class="input-container">
                         <label for="nameInput">Name</label>
                         <input type="text" id="nameInput" name="name" />
@@ -42,7 +58,7 @@
                         <select name="type_user" id="typeUser">
                             <?php
                             while ($row = $userTypeResult->fetch_assoc()) {
-                            echo '<option value="' . $row['id'] . '">' . $row['type_user'] . '</option>';
+                                echo '<option value="' . $row['id'] . '">' . $row['type_user'] . '</option>';
                             }
                             ?>
                         </select>

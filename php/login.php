@@ -14,7 +14,7 @@ if (!$statement) {
 $statement -> bind_param("ss", $username, $pass);
 
 if ($statement -> execute()) {
-    header('Location: principal.php');
+    header('Location: main.php');
     exit();
 } else {
     header("Location: index.php?error=1&username=" . urlencode($username));

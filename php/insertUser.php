@@ -23,7 +23,7 @@ if (!($type_user === '1' && (substr($email, -strlen(VALID_ADMIN_EMAIL))) === VAL
     exit();
 } else {
     if ($statement -> execute()) {
-        header('Location: principal.php');
+        header('Location: main.php');
         exit();
     } else {
         header('Location: pages/register.php?error=1');

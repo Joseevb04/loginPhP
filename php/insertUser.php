@@ -4,9 +4,7 @@ $mysqli = connectDb("user_db", "root");
 
 define("VALID_ADMIN_EMAIL", "xunta.gal");
 
-$list = $_POST;
-
-foreach ($list as $key => $value) {
+foreach ($_POST as $key => $value) {
     $$key = $value;
 }
 

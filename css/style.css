@@ -5,3 +5,44 @@
 body {
   font-family: system-ui;
 }
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  border: 4px inset black;
+  border-radius: 10px;
+  box-shadow: 5px 3px 40px 0px black;
+}
+
+.main-form * {
+  margin-inline: 1rem;
+}
+
+.main-form label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1pt;
+  margin-bottom: 0.1rem;
+}
+
+.main-form input,
+.main-form select {
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: ease-in var(--transition-time);
+}
+
+.main-form input:hover,
+.main-form button:hover,
+.main-form select:hover,
+.main-form input:focus-within,
+.main-form button:focus-within,
+.main-form select:focus-within {
+  scale: 1.02;
+}

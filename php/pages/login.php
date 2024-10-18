@@ -16,7 +16,7 @@
             <h2 class="mt-5 mb-5">Login User</h2>
             <form 
                 onsubmit="validateLogin(event)"
-                action="php/login.php" 
+                action="../authenticateUser.php" 
                 class="main-form bg-dark-subtle mt-5"
                 method="POST"
             >
@@ -61,7 +61,7 @@
                             class="btn btn-secondary fs-4 m-0"
                             type="button" 
                             id="registerButton"
-                            onclick="location.href = 'php/pages/register.php';"   
+                            onclick="location.href = 'register.php';"   
                         >Register</button>
                     </div>
                 </div>

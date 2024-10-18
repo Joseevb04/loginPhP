@@ -115,7 +115,7 @@
                     <button class="btn btn-primary fs-4 m-0" type="submit" id="submitButton">Submit</button>
                     <div class="d-flex flex-column align-items-start">
                         <span class="m-0 mb-2">Already have an account?</span>
-                        <button class="btn btn-secondary fs-4 m-0" type="button" id="loginButton" onclick="location.href = '../../index.php';">Login</button>
+                        <button class="btn btn-secondary fs-4 m-0" type="button" id="loginButton" onclick="location.href = 'login.php';">Login</button>
                     </div>
                 </div>
             </form>
